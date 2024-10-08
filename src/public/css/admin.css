@@ -1,0 +1,271 @@
+.admin-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.admin-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #75594a;
+    font-weight: normal;
+}
+
+.admin-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: space-between;
+    /* 要素を端から端まで配置 */
+    align-items: center;
+    /* 垂直方向の中央揃え */
+}
+
+.admin-search form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.search-input {
+    flex: 1.5;
+    /* 検索入力欄を他の要素より広げる */
+    min-width: 200px;
+    /* 最小幅をさらに広げる */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* 角を丸くする */
+    font-size: 14px;
+}
+
+.search-select_gender,
+.search-date {
+    flex: 0.5;
+    /* セレクトボックスと日付入力欄を狭める */
+    min-width: 120px;
+    /* 最小幅を少し狭める */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* 角を丸くする */
+    font-size: 14px;
+}
+
+.search-select_category {
+    flex: 0.8;
+    /* セレクトボックスと日付入力欄を狭める */
+    min-width: 120px;
+    /* 最小幅を少し狭める */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* 角を丸くする */
+    font-size: 14px;
+}
+
+.search-button,
+.reset-button {
+    flex: 0 0 auto;
+    /* ボタンのサイズを固定 */
+    min-width: 100px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    /* 角を丸くする */
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #75594a;
+    color: white;
+    transition: background-color 0.3s;
+    /* ホバー時のアニメーション */
+}
+
+.search-button:hover,
+.reset-button:hover {
+    background-color: #5a4738;
+    /* ホバー時の色 */
+}
+
+.admin-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #75594a;
+    color: white;
+}
+
+.admin-table td:last-child {
+    text-align: center;
+}
+
+.detail-button {
+    background-color: #75594a;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    /* リストスタイルをなしにする */
+    padding: 0;
+    /* パディングをリセット */
+    margin: 0;
+    /* マージンをリセット */
+}
+
+.page-item {
+    margin: 0 5px;
+    /* 各ページアイテムの間隔を調整 */
+}
+
+.page-link {
+    text-decoration: none;
+    /* テキストの下線を消す */
+    color: #75594a;
+    /* テキストの色を設定 */
+    padding: 5px 10px;
+    /* パディングを設定 */
+    border: 1px solid #ccc;
+    /* ボーダーを設定 */
+    border-radius: 5px;
+    /* 角を丸くする */
+}
+
+.page-item.active .page-link {
+    background-color: #75594a;
+    /* アクティブなページの背景色 */
+    color: white;
+    /* アクティブなページのテキスト色 */
+}
+
+.page-item.disabled .page-link {
+    color: #ccc;
+    /* 無効なページのテキスト色 */
+}
+
+.export-button {
+    background-color: #75594a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* モーダルのスタイル */
+.modal {
+    display: none;
+    /* デフォルトでは非表示 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    /* 幅を調整して広めにする */
+    max-width: 800px;
+    /* 最大幅を指定 */
+    text-align: left;
+    /* テキストを左揃えに */
+    position: relative;
+    /* 閉じるボタンの位置を調整するために必要 */
+}
+
+.close {
+    text-decoration: none;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #76655b;
+    border-radius: 50%;
+}
+
+/* モーダルが表示される時のスタイル */
+:target {
+    display: flex;
+}
+
+.close:hover,
+.close:focus {
+    color: #75594a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.delete-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+}
+
+.modal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.modal-table th,
+.modal-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.modal-table th {
+    font-weight: bold;
+    color: #75594a;
+}
+
+.modal-table td {
+    vertical-align: top;
+    color: #76655b;
+}

@@ -1,0 +1,146 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #75594a;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: table-row;
+    /* フォームをテーブルの行として表示 */
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.form__group-title {
+    display: table-cell;
+    /* 項目名をテーブルのセルとして表示 */
+    vertical-align: top;
+    /* テキストを垂直方向の中央に配置 */
+    padding: 10px;
+    text-align: left;
+    /* 項目名を右揃え */
+}
+
+.form__group-content {
+    display: table-cell;
+    /* 入力欄をテーブルのセルとして表示 */
+    vertical-align: middle;
+    /* テキストを垂直方向の中央に配置 */
+    padding-bottom: 20px;
+    text-align: left;
+    /* 入力欄を左揃え */
+}
+
+.form__label--required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: #c03a3a;
+    font-weight: bold;
+}
+
+.form__label--item {
+    color: #75594a;
+}
+
+.form__error {
+    padding: 10px;
+    margin: 2.5px;
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+
+.form__input--text input,
+.form__input--name input,
+.form__input--tel input,
+.form__input--textarea textarea {
+    padding: 5px;
+    padding-left: 10px;
+    width: 90%;
+    /* 幅を90%に設定し、テーブル内でバランスを取る */
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+    color: #797776;
+    background-color: rgba(247, 241, 233, 0.522);
+    border: none;
+}
+
+.form__input--text select {
+    height: 40px;
+    padding-left: 10px;
+    width: 90%;
+    color: #797776;
+    background-color: rgba(247, 241, 233, 0.522);
+    border: none;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--name input {
+    height: 40px;
+    flex: 1;
+    /* 各入力欄の幅を均等に */
+    max-width: 230px;
+    gap: 10px;
+    /* 各入力フィールドの間に適度な隙間を追加 */
+}
+
+.form__input--tel input {
+    height: 40px;
+    flex: 1;
+    /* 各入力欄の幅を均等に */
+    max-width: 150px;
+    gap: 10px;
+    /* 各入力フィールドの間に適度な隙間を追加 */
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+    margin-top: 10px;
+}
+
+.form__input--radio {
+    display: inline-block;
+    /* ラジオボタンをインライン表示 */
+    margin-right: 20px;
+    /* 各ラジオボタン間の間隔 */
+    margin-top: 10px;
+    color: #797776;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__button-submit:hover {
+    background: #333;
+    /* ホバー時のボタンの背景色変更 */
+}

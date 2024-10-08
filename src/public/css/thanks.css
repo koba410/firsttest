@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.thanks__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* 背景色を白に設定 */
+    z-index: -1;
+    /* 背景文字が他の要素の後ろになるようにする */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks__background-word {
+    font-size: 200px;
+    /* 背景文字のサイズ */
+    color: rgba(0, 0, 0, 0.05);
+    /* 文字の色を薄くする */
+    font-weight: bold;
+    text-align: center;
+}
+
+.thanks__content {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+}
+
+.thanks__heading {
+    font-size: 24px;
+    color: #75594a;
+    /* テキストの色を設定 */
+    margin-bottom: 40px;
+}
+
+.home__button {
+    text-align: center;
+    margin-top: 20px;
+    /* HOMEボタンを少し下に配置 */
+}
+
+
+.home__button-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #75594a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home__button-submit:hover {
+    background-color: #5a4738;
+    /* ホバー時の色 */
+}

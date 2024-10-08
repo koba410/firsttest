@@ -1,0 +1,116 @@
+.header {
+    background: #ffffff;
+    color: #75594a;
+    text-align: center;
+    /* ロゴを中央に配置 */
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #75594a;
+    /* アンダーラインを追加 */
+}
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    /* 中央に配置 */
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1230px;
+    position: relative;
+    /* 相対位置を設定 */
+}
+
+.header__logo {
+    color: #75594a;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.header-utilities {
+    position: absolute;
+    /* 絶対位置を設定 */
+    right: 50px;
+    /* 右端に配置 */
+    top: 50%;
+    /* ヘッダーの上端に合わせる */
+    transform: translateY(-50%);
+    /* 中央に配置 */
+    display: flex;
+    align-items: center;
+    /* 垂直方向の中央揃え */
+    text-align: right;
+    /* ログイン/ログアウトを右寄せ */
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* リストスタイルをなしにする */
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav__item {
+    margin-left: 20px;
+}
+
+.header-nav__button {
+    border: 1px solid #75594a;
+    background: transparent;
+    color: #75594a;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* 四角で囲む */
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.header-nav__button:hover {
+    background-color: #75594a;
+    color: #ffffff;
+}
+
+.header-nav__button:focus {
+    outline: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    text-decoration: none;
+    color: #75594a;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.page-item.active .page-link {
+    background-color: #75594a;
+    color: white;
+}
+
+.page-item.disabled .page-link {
+    color: #ccc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
